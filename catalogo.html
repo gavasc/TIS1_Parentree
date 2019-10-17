@@ -10,56 +10,81 @@
 
 <body>
     <header>
-        <div class="cabecalhoPagina">
-            <img class="logoParentree" src="" alt="Logo da Parentree">
+        <div id="cabecalhoPagina">
+            <img class="logoParentree" src="" alt="Logo da Parentree"> <!--Colocar a imagem do logo no src-->
             <h1 class="tituloPagina"> Parentree </h1>
 
             <div class="menuPagina">
                 <input type="checkbox" name="menu" id="menuToggler"> <!-- Olhar na net como faz menu hamburguer dps -->
             </div>
         </div>
+
+        <nav id="barraNavegaçãoCatalogo">
+            <div id="navegacao">
+                <ul id="itensNavegacao">
+                    <li> <a href=""> Inicio </a> </li>
+                    <li> <a href=""> Catalogo </a> </li>
+                    <li> <a href=""> Relatos de Cultivo </a> </li>
+                </ul>
+            </div>
+
+            <div id="barraBuscaCatalogo">
+                <input type="text" id="campoTextoBusca" placeholder="Qual planta deseja procurar?">
+                <button type="submit" id="botaoBuscarCatalogo">Buscar</button>
+            </div>
+        </nav>
+
     </header>
 
+
     <main>
-        <div class="barraLateralFiltros">
-            <ul class="listaFiltros">
-                <!-- Adicionar resto dos filtros -->
-                <li class="itemFiltro"> Hortaliças </li>
-                <li class="itemFiltro"> Suculentas </li>
-                <li class="itemFiltro"> Flores </li>
-                <li class="itemFiltro"> Cactos </li>
-            </ul>
+        <div class="barraLateral"> <!--Barra da esquerda que contem os filtros de busca-->
+            <div id="filtroTipoPlanta">
+                <h3 class="tituloFiltro">Tipo:</h3>
+
+                <ul id="listaFiltrosTipoPlanta">
+                    <li>
+                        <input type="checkbox" name="cactosESuculentas" id="">Cactos e Suculentas
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Flores" id="">Flores
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ornamentais" id="">Plantas Ornamentais
+                    </li>
+                </ul>
+            </div>
+
+            <div id="filtroLuz">
+                <h3 class="tituloFiltro">Luz:</h3>
+
+                <ul id="listaFiltroLuz">
+                    <li><input type="checkbox" name="plantasDeSol" id=""> Sol </li>
+                    <li><input type="checkbox" name="plantasDeMeiaLuz" id=""> Meia Luz </li>
+                    <li><input type="checkbox" name="plantasDeSombra" id=""> Sombra </li>
+                </ul>
+            </div>
+
+            <div id="filtroAgua">
+                <h3 class="tituloFiltro">Água:</h3>
+
+                <ul id="listaFiltroAgua">
+                    <li><input type="checkbox" name="plantasDeMuitaAgua" id=""> Muita água </li>
+                    <li><input type="checkbox" name="platasDePoucaAgua" id=""> Pouca Água </li>
+                </ul>
+            </div>
         </div>
 
         <div class="catalogoPlantas">
             <ul id="listaPlantas"> <!-- Lista de plantas que vao aparecer no catalogo -->
                 <li class="itemPlanta"> <!-- Em cada "li" terá um div contendo as infos resumidas da planta -->
-                    <div class="plantaSubInfo">
+                    <div class="plantaSubInfo"> <!--Modelo dos cards que serão preenchidos pelo JavaScript-->
                         <img class="fotoPlanta" src="" alt="Foto da planta">
-                        <h3 class="nomePlanta"> </h3>
-                        <p class="resumoDescricao"> </p>
-                    </div>
-                </li>
-
-                <li class="itemPlanta">
-                    <div class="plantaSubInfo">
-                        <img class="fotoPlanta" src="" alt="Foto da planta">
-                        <h3 class="nomePlanta"> </h3>
-                        <p class="resumoDescricao"> </p>
-                    </div>
-                </li>
-
-                <li class="itemPlanta">
-                    <div class="plantaSubInfo">
-                        <img class="fotoPlanta" src="" alt="Foto da planta">
-                        <h3 class="nomePlanta"> </h3>
-                        <p class="resumoDescricao"> </p>
-                    </div>
-                </li>
-
-                <li class="itemPlanta">
-                    <div class="plantaSubInfo">
-                        <img class="fotoPlanta" src="" alt="Foto da planta">
+                        <ul id="listaIconesPlanta">
+                            <li id="iconeSol"><img src="" alt=""></li>
+                            <li id="iconeAgua"><img src="" alt=""></li>
+                            <li id="iconeDificuldade"><img src="" alt=""></li>
+                        </ul>
                         <h3 class="nomePlanta"> </h3>
                         <p class="resumoDescricao"> </p>
                     </div>
