@@ -1,5 +1,15 @@
-body{
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
     margin: 0;
+    background-color: #ccebb8;
+}
+
+main {
+    height: 100%;
 }
 
 /* Cabeçalho */
@@ -73,4 +83,40 @@ body{
     float: right;
     margin-top: 5px;
     margin-right: 5px;
+}
+
+
+/* Conteúdo */
+
+.barraLateral {
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+    border-right: 2px solid rgb(184, 184, 184);
+}
+
+.barraLateral li {
+    list-style: none;
+}
+
+.barraLateral .tituloFiltro {
+    margin: 15px 0;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(44, 121, 102);
+}
+
+.barraLateral .listaFiltroLateral {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.barraLateral > .filtroLateral {
+    border-bottom: 1px solid rgb(184, 184, 184);
+    border-bottom-width: 80%;
+    padding-bottom: 15px;
+}
+
+.catalogoPlantas{
+    display: inline-block;
 }
