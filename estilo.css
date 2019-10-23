@@ -93,6 +93,8 @@ main {
     height: 100%;
     padding: 0 10px;
     border-right: 2px solid rgb(184, 184, 184);
+    position: relative;
+    float: left;
 }
 
 .barraLateral li {
