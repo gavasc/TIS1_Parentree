@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estilo.css">
+    <script src="db.js"></script>
     <title>Parentree - Catálogo</title>
 </head>
 
@@ -74,27 +75,20 @@
                     <li><input type="checkbox" name="platasDePoucaAgua" id=""> Pouca Água </li>
                 </ul>
             </div>
+
+            <div id="divBotaoFiltro">
+                <button id="botaoAcionaFiltro" >Filtrar</button>
+            </div>
         </div>
 
         <div class="catalogoPlantas">
             <ul id="listaPlantas"> <!-- Lista de plantas que vao aparecer no catalogo -->
-                <li class="itemPlanta"> <!-- Em cada "li" terá um div contendo as infos resumidas da planta -->
-                    <div class="plantaSubInfo"> <!--Modelo dos cards que serão preenchidos pelo JavaScript-->
-                        <img class="fotoPlanta" src="" alt="Foto da planta">
-                        <ul id="listaIconesPlanta">
-                            <li id="iconeSol"><img src="" alt=""></li>
-                            <li id="iconeAgua"><img src="" alt=""></li>
-                            <li id="iconeDificuldade"><img src="" alt=""></li>
-                        </ul>
-                        <h3 class="nomePlanta"> </h3>
-                        <p class="resumoDescricao"> </p>
-                    </div>
-                </li>
+                
             </ul>
         </div>
 
     </main>
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
