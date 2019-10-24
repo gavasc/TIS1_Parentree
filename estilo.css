@@ -9,6 +9,7 @@ body {
 }
 
 main {
+    display: flex;
     height: 100%;
 }
 
@@ -93,8 +94,7 @@ main {
     height: 100%;
     padding: 0 10px;
     border-right: 2px solid rgb(184, 184, 184);
-    position: relative;
-    float: left;
+    
 }
 
 .barraLateral li {
@@ -115,7 +115,6 @@ main {
 
 .barraLateral > .filtroLateral {
     border-bottom: 1px solid rgb(184, 184, 184);
-    border-bottom-width: 80%;
     padding-bottom: 15px;
 }
 
@@ -130,6 +129,34 @@ main {
     height: 30px;
 }
 
-.catalogoPlantas{
+#catalogoPlantas{
+    width: 100%;
+}
+
+#catalogoPlantas > .plantaSubInfo {
     display: inline-block;
+    background-color: #cde4b1;
+    width: 250px;
+    height: 300px;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#catalogoPlantas > .plantaSubInfo > #listaIconesPlanta {
+    display: inline-block;
+    margin: 0;
+}
+
+#catalogoPlantas > .plantaSubInfo > .fotoPlanta {
+    width: 150px;
+    height: 150px;
+}
+
+#catalogoPlantas > .plantaSubInfo > .nomePlanta {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(44, 121, 102);
 }
