@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estilo.css">
     <script src="db.js"></script>
+    <script src="scriptFiltros.js"></script>
     <title>Parentree - Catálogo</title>
 </head>
 
@@ -30,9 +31,10 @@
                 </ul>
             </div>
 
+            
             <div id="barraBuscaCatalogo">
                 <input type="text" id="campoTextoBusca" placeholder="Qual planta deseja procurar?">
-                <button type="submit" id="botaoBuscarCatalogo">Buscar</button>
+            <!--<button type="submit" id="botaoBuscarCatalogo">Buscar</button>-->
             </div>
         </nav>
 
@@ -48,7 +50,7 @@
                     <li><input type="checkbox" name="cactosESuculentas" class="checkboxFiltros">Cactos e Suculentas</li>
                     <li><input type="checkbox" name="flores" class="checkboxFiltros">Flores</li>
                     <li><input type="checkbox" name="ornamentais" class="checkboxFiltros">Plantas Ornamentais</li>
-                </ul>
+                </ul> 
             </div>
 
             <div class="filtroLateral" id="filtroLuz">
@@ -71,7 +73,7 @@
             </div>
 
             <div id="divBotaoFiltro">
-                <button id="botaoAcionaFiltro" >Filtrar</button>
+                <button id="botaoAcionaFiltro" onclick="pegaFiltros()" >Filtrar</button>
             </div>
         </div>
 

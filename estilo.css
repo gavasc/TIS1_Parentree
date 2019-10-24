@@ -131,6 +131,7 @@ main {
 
 #catalogoPlantas{
     width: 100%;
+    padding-left: 65px;
 }
 
 #catalogoPlantas > .plantaSubInfo {
@@ -141,6 +142,11 @@ main {
     margin: 5px;
     text-align: center;
     vertical-align: middle;
+}
+
+#catalogoPlantas > .plantaSubInfo:hover {
+    background-color: #e0f7c3;
+    transform: scale(1.05);
 }
 
 #catalogoPlantas > .plantaSubInfo > #listaIconesPlanta {
