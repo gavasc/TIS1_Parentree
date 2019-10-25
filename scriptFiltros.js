@@ -14,9 +14,9 @@ function comparaFiltroDB(){
 
     db.plantas.forEach(item => {
         
-        if(filtrosSelec.includes(item.categoria) && (filtrosSelec.includes(item.categoria)==false && nadaMarcado(filtrosCat)==false) ){
-            if(filtrosSelec.includes(item.agua) && (filtrosSelec.includes(item.categoria)==false && nadaMarcado(filtrosAgua)==false) ){
-                if(filtrosSelec.includes(item.luz) && (filtrosSelec.includes(item.categoria)==false && nadaMarcado(filtrosLuz)==false) ){
+        if(filtrosSelec.includes(item.categoria)){
+            if(filtrosSelec.includes(item.agua)) {
+                if(filtrosSelec.includes(item.luz) ){
                     console.log(item.nomePlanta);
                     imprime(item);
                 }
