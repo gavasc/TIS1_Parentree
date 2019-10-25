@@ -47,9 +47,10 @@
                 <h3 class="tituloFiltro">Tipo:</h3>
 
                 <ul class="listaFiltroLateral" id="listaFiltrosTipoPlanta">
-                    <li><input type="checkbox" name="cactosESuculentas" class="checkboxFiltros">Cactos e Suculentas</li>
-                    <li><input type="checkbox" name="flores" class="checkboxFiltros">Flores</li>
-                    <li><input type="checkbox" name="ornamentais" class="checkboxFiltros">Plantas Ornamentais</li>
+                    <li><input type="checkbox" name="Cactos" class="checkboxFiltros filtroCategoria">Cactos</li>
+                    <li><input type="checkbox" name="Suculentas" class="checkboxFiltros filtroCategoria">Suculentas</li>
+                    <li><input type="checkbox" name="Flores" class="checkboxFiltros filtroCategoria">Flores</li>
+                    <li><input type="checkbox" name="Ornamentais" class="checkboxFiltros filtroCategoria">Plantas Ornamentais</li>
                 </ul> 
             </div>
 
@@ -57,9 +58,9 @@
                 <h3 class="tituloFiltro">Luz:</h3>
 
                 <ul class="listaFiltroLateral" id="listaFiltroLuz">
-                    <li><input type="checkbox" name="plantasDeSol" class="checkboxFiltros"> Sol </li>
-                    <li><input type="checkbox" name="plantasDeMeiaLuz" class="checkboxFiltros"> Meia Luz </li>
-                    <li><input type="checkbox" name="plantasDeSombra" class="checkboxFiltros"> Sombra </li>
+                    <li><input type="checkbox" name="Sol" class="checkboxFiltros filtroSol"> Sol </li>
+                    <li><input type="checkbox" name="Meia Luz" class="checkboxFiltros filtroSol"> Meia Luz </li>
+                    <li><input type="checkbox" name="Sombra" class="checkboxFiltros filtroSol"> Sombra </li>
                 </ul>
             </div>
 
@@ -67,13 +68,13 @@
                 <h3 class="tituloFiltro">Água:</h3>
 
                 <ul class="listaFiltroLateral" id="listaFiltroAgua">
-                    <li><input type="checkbox" name="plantasDeMuitaAgua" class="checkboxFiltros"> Muita água </li>
-                    <li><input type="checkbox" name="platasDePoucaAgua" class="checkboxFiltros"> Pouca Água </li>
+                    <li><input type="checkbox" name="Muita Agua" class="checkboxFiltros filtroAgua"> Muita água </li>
+                    <li><input type="checkbox" name="Pouca Agua" class="checkboxFiltros filtroAgua"> Pouca Água </li>
                 </ul>
             </div>
 
             <div id="divBotaoFiltro">
-                <button id="botaoAcionaFiltro" onclick="pegaFiltros()" >Filtrar</button>
+                <button id="botaoAcionaFiltro" onclick="comparaFiltroDB()" >Filtrar</button>
             </div>
         </div>
 
