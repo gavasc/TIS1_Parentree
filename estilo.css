@@ -38,49 +38,12 @@ main {
     color: rgb(44, 121, 102);
 }
 
-#cabecalhoPagina > .menuPagina {
-    float: right;
-}
-
 #barraNavegacao {
     background-color: #bedf98;
     width: 100%;
     text-align: center;
 }
-
-#navegacao {
-    padding:0px;
-    margin:0px;
-    display:inline-block;
-    height: 30px;
-}
-
-#navegacao > #itensNavegacao {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-#navegacao > #itensNavegacao li {
-    display: inline-block;
-    padding: 0 10px;
-    padding-top: 5px;
-    height: 90%;
-    text-align: center;
-}
-
-#navegacao > #itensNavegacao li a {
-    text-decoration: none;
-    color: rgb(44, 121, 102);
-    padding: 2px 10px;
-}
-
-#navegacao > #itensNavegacao li:hover {
-    background-color: #a9da89;
-}
-
-#barraNavegacao > #barraBuscaCatalogo {
+#barraBuscaCatalogo {
     float: right;
     margin-top: 5px;
     margin-right: 5px;
@@ -165,4 +128,98 @@ main {
     font-weight: bold;
     font-style: italic;
     color: rgb(44, 121, 102);
+}
+
+/* Menu hamburguer */
+.menu-h
+{
+    background:  rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 30 #fff;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.menu-h:hover
+{
+    box-shadow: 0 0 0 3px #fff, 0 0 0 3px #fff;
+}
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #000;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+/* Efeitos do input do menu */
+input#menu-hamburguer {
+    display: none;
+}
+input#menu-hamburguer:checked ~ label .menu-h
+{
+    box-shadow: 0 0 0 130vw #fff, 0 0 0 130vw #fff;
+}
+input#menu-hamburguer:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+
+input#menu-hamburguer:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input#menu-hamburguer:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.opcoesMenu a
+{
+    display: block;
+    margin-bottom: 40px;
+    color: #bedf98;
+    font-size: 0px;
+    text-decoration: none;
+}
+/* Posicionamento do menu */
+.opcoesMenu ul
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    font-size: 45px;
+    opacity: 1;
+}
+/* Aparecer o menu quando clicar no ícone */
+input#menu-hamburguer:checked ~ .opcoesMenu a
+{
+font-size: 45px;
 }
