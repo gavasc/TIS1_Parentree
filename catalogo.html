@@ -14,35 +14,39 @@
 <body>
     <header>
         <div id="cabecalhoPagina">
-            <img class="logoParentree" src="logoParentree.png" alt="Logo da Parentree"> <!--Colocar a imagem do logo no src-->
+            <img class="logoParentree" src="logoParentree.png" alt="Logo da Parentree">
+            <!--Colocar a imagem do logo no src-->
             <h1 class="tituloPagina"> Parentree </h1>
+            <!-- Menu hamburguer-->
+            <input id="menu-hamburguer" type="checkbox">
 
-            <div class="menuPagina">
-                <input type="checkbox" name="menu" id="menuToggler"> <!-- Olhar na net como faz menu hamburguer dps -->
-            </div>
-        </div>
-
-        <nav id="barraNavegacao">
-            <div id="navegacao">
-                <ul id="itensNavegacao">
-                    <li> <a href=""> Inicio </a> </li>
-                    <li> <a href=""> Catalogo </a> </li>
-                    <li> <a href=""> Relatos de Cultivo </a> </li>
+            <label for="menu-hamburguer">
+                <div class="menu-h">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+            <div class="opcoesMenu">
+                <ul>
+                    <li><a href="#">Minhas Plantas</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Relato de cultivo</a></li>
+                    <li><a href="#">Configurações</a></li>
                 </ul>
             </div>
-
-            
-            <div id="barraBuscaCatalogo">
-                <input type="text" id="campoTextoBusca" placeholder="Qual planta deseja procurar?">
+        </div>
+        <!-- Fim menu hamburguer -->
+        <div id="barraBuscaCatalogo">
+            <input type="text" id="campoTextoBusca" placeholder="Qual planta deseja procurar?">
             <!--<button type="submit" id="botaoBuscarCatalogo">Buscar</button>-->
-            </div>
+        </div>
         </nav>
 
     </header>
 
 
     <main>
-        <div class="barraLateral"> <!--Barra da esquerda que contem os filtros de busca-->
+        <div class="barraLateral">
+            <!--Barra da esquerda que contem os filtros de busca-->
             <div class="filtroLateral" id="filtroTipoPlanta">
                 <h3 class="tituloFiltro">Tipo:</h3>
 
@@ -50,8 +54,9 @@
                     <li><input type="checkbox" name="Cactos" class="checkboxFiltros filtroCategoria">Cactos</li>
                     <li><input type="checkbox" name="Suculentas" class="checkboxFiltros filtroCategoria">Suculentas</li>
                     <li><input type="checkbox" name="Flores" class="checkboxFiltros filtroCategoria">Flores</li>
-                    <li><input type="checkbox" name="Ornamentais" class="checkboxFiltros filtroCategoria">Plantas Ornamentais</li>
-                </ul> 
+                    <li><input type="checkbox" name="Ornamentais" class="checkboxFiltros filtroCategoria">Plantas
+                        Ornamentais</li>
+                </ul>
             </div>
 
             <div class="filtroLateral" id="filtroLuz">
@@ -74,12 +79,12 @@
             </div>
 
             <div id="divBotaoFiltro">
-                <button id="botaoAcionaFiltro" onclick="comparaFiltroDB()" >Filtrar</button>
+                <button id="botaoAcionaFiltro" onclick="comparaFiltroDB()">Filtrar</button>
             </div>
         </div>
 
         <div id="catalogoPlantas">
-            
+
         </div>
 
     </main>
