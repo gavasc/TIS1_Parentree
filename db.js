@@ -4,6 +4,7 @@ var db = {
         {
             "nomePlanta": "Jiboia",
             "linkImagem": "",
+            "tags": ['Ornamentais', 'Meia Luz', 'Pouca Agua'],
             "categoria": "Ornamentais",
             "luz": "Meia Luz",
             "agua": "Pouca Agua",
@@ -21,6 +22,7 @@ var db = {
         {
             "nomePlanta": "Peperômia melancia",
             "linkImagem": "",
+            "tags": ['Ornamentais', 'Meia Luz', 'Pouca Agua'],
             "categoria": "Ornamentais",
             "luz": "Meia Luz",
             "agua": "Pouca Agua",
@@ -39,6 +41,7 @@ var db = {
         {
             "nomePlanta": "Zamioculca",
             "linkImagem": "",
+            "tags": ['Ornamentais', 'Sombra', 'Pouca Agua'],
             "categoria": "Ornamentais",
             "luz": "Sombra",
             "agua": "Pouca Agua",
