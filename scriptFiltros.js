@@ -14,7 +14,7 @@ function comparaFiltroDB(){
 
     db.plantas.forEach(item => {
 
-        if(contemTodos(item.tags, filtrosSelec)) {
+        if( contem(item.tags, filtrosSelec.cat) && contem(item.tags, filtrosSelec.luz) && contem(item.tags, filtrosSelec.agua) ){//contemTodos(item.tags, filtrosSelec)) {
             imprime(item);
         }
         // if(filtrosSelec.includes(item.categoria)){
@@ -31,31 +31,74 @@ function comparaFiltroDB(){
     console.log(filtrosSelec);
 }
 
+function contem(tags, filtro){
+
+    var result = false;
+    
+    if(filtro.length > 0){
+
+        for(let i = 0; i < filtro.length; i++){
+            if( tags.includes( filtro[i]) ) result = true;
+        }
+
+    } else result = true;
+
+    return result;
+}
+
+let checker = (arr, target) => target.every(v => arr.includes(v));
+
 function contemTodos(tags, filtrosSelec){
     var result = false;
 
     if( filtrosSelec.cat.length > 0 ){
-        filtrosSelec.cat.forEach(item => {
+        for (let i = 0; i < filtrosSelec.cat.length; i++) {
+            const item = filtrosSelec.cat[i];
             if( tags.includes(item) ){
                 result = true;
-            }
-        });
+                break;
+            } else result = false;
+        }
+        // filtrosSelec.cat.forEach(item => {
+        //     if( tags.includes(item) ){
+        //         result = true;
+        //         break;
+        //     } else result = false;
+        // });
     }
 
     if( filtrosSelec.luz.length > 0 ){
-        filtrosSelec.luz.forEach(item => {
+
+        for (let i = 0; i < filtrosSelec.luz.length; i++) {
+            const item = filtrosSelec.luz[i];
             if( tags.includes(item) ){
                 result = true;
-            }
-        });
+                break;
+            } else result = false;
+        }
+
+        // filtrosSelec.luz.forEach(item => {
+        //     if( tags.includes(item) ){
+        //         result = true;
+        //     }
+        // });
     }
 
     if( filtrosSelec.agua.length > 0 ){
-        filtrosSelec.agua.forEach(item => {
+
+        for (let i = 0; i < filtrosSelec.agua.length; i++) {
+            const item = filtrosSelec.agua[i];
             if( tags.includes(item) ){
                 result = true;
-            }
-        });
+                break;
+            } else result = false;
+        }
+
+        // filtrosSelec.agua.forEach(item => {
+        //     if( tags.includes(item) ){
+        //         result = true;
+        //     }
+        // });
     }
     // filtrosSelec.forEach(item => {
     //     if( !tags.includes(item) ) {
