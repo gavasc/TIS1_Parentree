@@ -46,9 +46,9 @@ function imprime(planta) {
     `<div class="plantaSubInfo">
         <img class="fotoPlanta" src="${planta.linkImagem}" alt="Foto da planta">
         <ul id="listaIconesPlanta">
-            <li id="iconeSol"><img src="" alt=""></li>
-            <li id="iconeAgua"><img src="" alt=""></li>
-            <li id="iconeDificuldade"><img src="" alt=""></li>
+            <li id="iconeSol"><img src="${planta.linkLuz}" alt=""></li>
+            <li id="iconeAgua"><img src="${planta.linkAgua}" alt=""></li>
+            <li id="iconeDificuldade"><img src="${planta.linkDififuldade}" alt=""></li>
         </ul>
         <h3 class="nomePlanta"> ${planta.nomePlanta} </h3>
         <p class="resumoDescricao"> ${planta.resumo} </p>

@@ -20,11 +20,11 @@ for(var i = 0; i < db.plantas.length; i++){
     '<div class="plantaSubInfo">'+
         `<img class="fotoPlanta" src="${db.plantas[i].linkImagem}" alt="Foto da planta">`+
         '<ul id="listaIconesPlanta">'+
-            '<li id="iconeSol"><img src="" alt=""></li>'+
-            '<li id="iconeAgua"><img src="" alt=""></li>'+
-            '<li id="iconeDificuldade"><img src="" alt=""></li>'+
+            `<li id="iconeSol"><img src="${db.plantas[i].linkLuz}" alt=""></li>`+
+            `<li id="iconeAgua"><img src="${db.plantas[i].linkAgua}" alt=""></li>`+
+            `<li id="iconeDificuldade"><img src="${db.plantas[i].linkDificuldade}" alt=""></li>`+
         '</ul>'+
-        `<h3 class="nomePlanta"> ${db.plantas[i].nomePlanta} </h3>`+
+        `<h3 class="nomePlanta" href="plantainfo.html"> ${db.plantas[i].nomePlanta} </h3>`+
         `<p class="resumoDescricao"> ${db.plantas[i].resumo} </p>`+
     '</div>';
 }

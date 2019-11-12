@@ -5,7 +5,7 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background-color: #ccebb8;
+    background-color: #ffffff;
 }
 
 main {
@@ -16,30 +16,38 @@ main {
 /* Cabeçalho */
 
 #cabecalhoPagina {
-    background-color:#a9da89;
-    height: 80px;
+    margin-top: -20px;
+    height: 130px;
+    background-color: rgb(105, 185, 125);
+    width: 100%;
+    margin-left: -5px;
+    -moz-transform: rotate(-1.6deg);
+    -ms-transform: rotate(-1.6deg);
+    -webkit-transform: rotate(-1.6deg);
+    transform: rotate(-1.6deg);
 }
 
 #cabecalhoPagina > .logoParentree {
+    transform: rotate(1.6deg);
     float: left;
-    padding-top: 20px;
-    padding-left: 10px;
+    padding-top: 40px;
+    padding-left: 30px;
     margin-right: 20px;
-    width: 60px;
-    height: 50px;
 }
 
 #cabecalhoPagina > .tituloPagina {
+    transform: rotate(2deg);
     display: inline-block;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 46px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
     font-weight: bold;
-    font-style: italic;
-    color: rgb(44, 121, 102);
+    color: rgb(255, 255, 255);
 }
 
 #barraNavegacao {
-    background-color: #bedf98;
+    background-color: #9bdf98;
     width: 100%;
     text-align: center;
 }
@@ -49,15 +57,20 @@ main {
     margin-right: 5px;
 }
 
+.menu-h{
+    margin-top: 50px;
+    transform: rotate(2deg);
+}
 
 /* Conteúdo */
 
 .barraLateral {
     display: inline-block;
+    width: 280px;
     height: 100%;
-    padding: 0 10px;
+    padding: 20px 10px;
     border-right: 2px solid rgb(184, 184, 184);
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .barraLateral li {
@@ -67,7 +80,6 @@ main {
 .barraLateral .tituloFiltro {
     margin: 15px 0;
     font-weight: bold;
-    font-style: italic;
     color: rgb(44, 121, 102);
 }
 
@@ -87,47 +99,76 @@ main {
 }
 
 .barraLateral > #divBotaoFiltro > #botaoAcionaFiltro {
-    background-color: #a9da89;
-    width: 80px;
-    height: 30px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #dadada;
+    text-align: center;
+    cursor: pointer;
 }
 
 #catalogoPlantas{
     width: 100%;
     padding-left: 65px;
+    padding-top: 25px;
 }
 
 #catalogoPlantas > .plantaSubInfo {
     display: inline-block;
-    background-color: #cde4b1;
+    background-color: #ffffff;
     width: 250px;
     height: 300px;
-    margin: 5px;
-    text-align: center;
+    margin: 25px;
+    text-align: left;
     vertical-align: middle;
 }
 
-#catalogoPlantas > .plantaSubInfo:hover {
-    background-color: #e0f7c3;
+/*#catalogoPlantas > .plantaSubInfo:hover {
+    background-color:  rgb(243, 243, 243);
     transform: scale(1.05);
-}
+}*/
 
 #catalogoPlantas > .plantaSubInfo > #listaIconesPlanta {
     display: inline-block;
     margin: 0;
 }
 
+#catalogoPlantas > .plantaSubInfo > #listaIconesPlanta > li {
+    list-style: none;
+}
+
 #catalogoPlantas > .plantaSubInfo > .fotoPlanta {
-    width: 150px;
-    height: 150px;
+    padding-left: 8px;
+    width: 165px;
+    height: 165px;
+}
+
+#iconeSol {
+    margin-bottom: 25px;
+}
+
+#iconeAgua {
+    margin-bottom: 25px;
+    margin-left: 3px;
+}
+
+#iconeDificuldade {
+    margin-bottom: 25px;
 }
 
 #catalogoPlantas > .plantaSubInfo > .nomePlanta {
     margin: 0;
     font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-style: italic;
     color: rgb(44, 121, 102);
+}
+
+#catalogoPlantas > .plantaSubInfo > .resumoDescricao {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Menu hamburguer */
@@ -201,25 +242,27 @@ input#menu-hamburguer:checked ~ label .hamburguer:after {
 
 .opcoesMenu a
 {
+    transform: rotate(2deg);
     display: block;
     margin-bottom: 40px;
     color: #bedf98;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0px;
     text-decoration: none;
 }
 /* Posicionamento do menu */
 .opcoesMenu ul
 {
+    margin-top: -10px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 38%;
     list-style: none;
-    font-size: 45px;
+    font-size: 35px;
     opacity: 1;
 }
 /* Aparecer o menu quando clicar no ícone */
 input#menu-hamburguer:checked ~ .opcoesMenu a
 {
-font-size: 45px;
+    font-size: 35px;
 }
+
