@@ -24,7 +24,7 @@ for(var i = 0; i < db.plantas.length; i++){
             `<li id="iconeAgua"><img src="${db.plantas[i].linkAgua}" alt=""></li>`+
             `<li id="iconeDificuldade"><img src="${db.plantas[i].linkDificuldade}" alt=""></li>`+
         '</ul>'+
-        `<h3 class="nomePlanta" href="plantainfo.html"> ${db.plantas[i].nomePlanta} </h3>`+
+        `<a href="../infoPlanta/infoPlanta.html?nome=${db.plantas[i].nomePlanta}"><h3 class="nomePlanta"> ${db.plantas[i].nomePlanta} </h3></a>`+
         `<p class="resumoDescricao"> ${db.plantas[i].resumo} </p>`+
     '</div>';
 }
