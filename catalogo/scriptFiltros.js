@@ -50,7 +50,7 @@ function imprime(planta) {
             <li id="iconeAgua"><img src="${planta.linkAgua}" alt=""></li>
             <li id="iconeDificuldade"><img src="${planta.linkDififuldade}" alt=""></li>
         </ul>
-        <h3 class="nomePlanta"> ${planta.nomePlanta} </h3>
+        <h3 class="nomePlanta"> <a href="../infoPlanta/infoPlanta.html?nome=${planta.nomePlanta}"> ${planta.nomePlanta} </a></h3>
         <p class="resumoDescricao"> ${planta.resumo} </p>
     </div>`;
 }

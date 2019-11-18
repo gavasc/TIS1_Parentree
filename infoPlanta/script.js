@@ -5,10 +5,11 @@ console.log(parametros);
 db.plantas.forEach(item => {
     
     if (item.nomePlanta == parametros.nome) {
-        document.getElementById("informacoesPlanta").innerHTML = `
-        
-            <img id="imgPrincipalPlanta" src="${item.linkImagem}">
-        
+		document.getElementById("informacoesPlanta").innerHTML = `
+		
+			<a id="nome_planta">"${item.nomePlanta}"</a>
+			<a id="nome_cientifico"> "${item.nomeCientifico}"</a>
+			<img id="imgPrincipalPlanta" src="${item.linkImagem}">
         `;
     }
 });

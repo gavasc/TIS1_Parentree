@@ -162,3 +162,51 @@ input#menu-hamburguer:checked ~ .opcoesMenu a
     font-size: 35px;
 }
 
+/* Reajuste dos icones em relação à página
+#iconeSol {
+    margin-bottom: 25px;
+}
+
+#iconeAgua {
+    margin-bottom: 25px;
+    margin-left: 3px;
+}
+
+#iconeDificuldade {
+    margin-bottom: 25px;
+}
+*/
+
+/* Posicao da imagem da planta e o hover */
+#imgPrincipalPlanta {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    right: -1250px;
+    top: 50px;
+    
+    border: 3px solid #73AD21;
+}
+#imgPrincipalPlanta:hover {
+	transform: scale(1.1);
+}
+/* Fim da imagem */
+
+
+#nome_planta
+{
+    position: fixed;
+    left: 100px;
+    bottom: 700px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#nome_cientifico{
+    position: fixed;
+    left: 100px;
+    bottom: 630px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;  
+}
