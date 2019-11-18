@@ -10,6 +10,8 @@ db.plantas.forEach(item => {
 			<a id="nome_planta">"${item.nomePlanta}"</a>
 			<a id="nome_cientifico"> "${item.nomeCientifico}"</a>
 			<img id="imgPrincipalPlanta" src="${item.linkImagem}">
+			<div id="descricao"><a>"${item.descricao}"</a></div>
+			<a id="tags">Encontrado em:<br>"${item.tags}"</a>
         `;
     }
 });
