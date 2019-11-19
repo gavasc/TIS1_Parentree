@@ -23,11 +23,22 @@ function adicionarMinhasPlantas(){
 		localStorage.setItem('minhasPlantas', JSON.stringify(listaPlantas));
 	} else {
 		listaPlantas = JSON.parse( localStorage.getItem('minhasPlantas') ); // Caso ja exista pega o array do localStorage
-		listaPlantas[listaPlantas.length] = parametros.nome;				//e armazena o novo elemento
-		localStorage.setItem('minhasPlantas', JSON.stringify(listaPlantas));
+		if(jaExiste(listaPlantas, parametros.nome)){						//e armazena o novo elemento
+			listaPlantas[listaPlantas.length] = parametros.nome;
+			localStorage.setItem('minhasPlantas', JSON.stringify(listaPlantas));
+		}
 	}
 
 	console.log(localStorage.getItem('minhasPlantas'));
+}
+
+function jaExiste(lista, nome){
+
+	for(let i = 0; i < lista.length; i++){
+		if(lista[i] == nome) return false;
+	}
+
+	return true;
 }
 
 function getParams(url) {
