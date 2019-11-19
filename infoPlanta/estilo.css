@@ -5,7 +5,7 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background-color: rgb(238, 235, 235);
+    background-color: rgb(255, 255, 255);
 }
 
 main {
@@ -162,96 +162,54 @@ input#menu-hamburguer:checked ~ .opcoesMenu a
     font-size: 35px;
 }
 
-/* Reajuste dos icones em relação à página
-#iconeSol {
-    margin-bottom: 25px;
-}
 
-#iconeAgua {
-    margin-bottom: 25px;
-    margin-left: 3px;
-}
-
-#iconeDificuldade {
-    margin-bottom: 25px;
-}
-*/
-
-/* Posicao da imagem da planta e o hover */
+/* parte da página com a imagem e descrição da planta */
 #imgPrincipalPlanta {
     position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 300px;
-    top: 170px;
-    
-    border: 3px solid #73AD21;
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    right: 4%;
+    border: 4px solid #73AD21;
 }
-#imgPrincipalPlanta:hover {
-	transform: scale(1.1);
-}
-/* Fim da imagem */
-
-
 #nome_planta
 {
     position: absolute;
-    left: 840px;
-    bottom: 700px;
+    left: 5%;
+    top: 25%;
     color: #b4e466;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
-#nome_planta:hover
-{
-
-    transform: scale(1.1);
-}
 #nome_cientifico{
     position: absolute;
-    top: 250px;
-    left: 890px;
-    color: #000000;
+    left: 10%;
+    top: 35%;
     font-size: 19px;
     font-style: italic;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;  
 }
 #descricao{
-    height: 100%;
-    width: 900px;
-    position: relative;
-    left: 650px;
-    top: 190px;
-
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    
 }
 #descricao > a{
     font-size:30px;
-
     font-family: Arial, Times, serif;
 }
-
-#menu-2{
-    position: relative;
-    top: 20px;
-    list-style-type: none;
-}
-#menu-2 > ul
+#tags /* Ainda está desajustado */
 {
-    list-style-type: none;
-}
+    position: absolute;
+    right: 200px;
+    bottom: 190px;
+    font-size: 80%;
+    font-family: Arial, Times, serif;
 
-.menu-estilo-2{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-}
-
-#tags
-{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position:absolute;
-    bottom: 320px;
-    left: 300px;
 
 }
