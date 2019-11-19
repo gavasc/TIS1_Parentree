@@ -1,7 +1,5 @@
 var parametros = getParams(window.location.href);
 
-console.log(parametros);
-
 db.plantas.forEach(item => {
     
     if (item.nomePlanta == parametros.nome) {
@@ -15,6 +13,22 @@ db.plantas.forEach(item => {
         `;
     }
 });
+
+
+function adicionarMinhasPlantas(){
+	var listaPlantas = [];
+
+	if ( localStorage.getItem('minhasPlantas') === null ) { // Verifica se "minhasPlantas" ja existe no localStorage
+		listaPlantas[0] = parametros.nome;					//se nao existir, cria o array e armazena o primeiro elemento
+		localStorage.setItem('minhasPlantas', JSON.stringify(listaPlantas));
+	} else {
+		listaPlantas = JSON.parse( localStorage.getItem('minhasPlantas') ); // Caso ja exista pega o array do localStorage
+		listaPlantas[listaPlantas.length] = parametros.nome;				//e armazena o novo elemento
+		localStorage.setItem('minhasPlantas', JSON.stringify(listaPlantas));
+	}
+
+	console.log(localStorage.getItem('minhasPlantas'));
+}
 
 function getParams(url) {
 	var params = {};
