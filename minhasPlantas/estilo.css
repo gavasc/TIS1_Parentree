@@ -157,4 +157,46 @@ input#menu-hamburguer:checked ~ .opcoesMenu a
 {
     font-size: 35px;
 }
+/* Estilo das plantas na página */
+.imagemPlanta
+{
 
+    width: 165px;
+    height: 165px;
+}
+.nomePlanta
+{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: rgb(44, 121, 102);
+}
+#minhaPlanta
+{
+    display: inline-block;
+    background-color: #ffffff;
+    width: 250px;
+    height: 400px;
+    margin: 25px;
+    vertical-align: left;
+}
+/* BUTTON */
+
+#btnRetirarMinhasPlantas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	padding: 8px 20px;
+	background: -webkit-gradient(
+	linear, left top, left bottom,
+	from(#9ebf79),
+	to(#b1e89c));
+	border-radius: 10px;
+	border: 1px solid #ffffff;
+	box-shadow:
+		0px 1px 3px rgba(82,63,82,0.5),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	text-shadow:
+		0px -1px 3px rgba(255,255,255,0.8),
+		0px 1px 0px rgba(31,28,31,0.6);
+}

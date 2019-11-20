@@ -18,10 +18,13 @@ function pegaInfos(nome){
 
 function mostrar(item){
     document.getElementById('listaMinhasPlantas').innerHTML += `
-        <div class="minhaPlanta">
+        <div id="minhaPlanta">
             <h2 class="nomePlanta"> ${item.nomePlanta} </h2>
             <img class="imagemPlanta" src="${item.linkImagem}">
             <p class="resumoPlanta"> ${item.resumo} </p> 
+            <div id="botaoRetirar">
+            <button id="btnRetirarMinhasPlantas" onclick="retirarMinhasPlantas()"> Retirar essa planta </button>
+        </div>
         </div>
     `
 }

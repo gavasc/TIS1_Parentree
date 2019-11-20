@@ -28,7 +28,7 @@ function adicionarMinhasPlantas(){
 			localStorage.setItem('minhasPlantas', JSON.stringify(listaPlantas));
 		}
 	}
-
+	alert('Planta adicionada :)');
 	console.log(localStorage.getItem('minhasPlantas'));
 }
 
