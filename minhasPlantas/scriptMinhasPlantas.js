@@ -28,3 +28,21 @@ function mostrar(item){
         </div>
     `
 }
+
+function retirarMinhasPlantas(){
+    var array = JSON.parse(localStorage.getItem('minhasPlantas'));
+
+    var nome = document.querySelector('.nomePlanta').textContent;
+    console.log(nome);
+    console.log(array);
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i] == nome){
+            array.splice(i, 1);
+            break;
+        }
+    }
+
+    localStorage.removeItem('minhasPlantas');
+    localStorage.setItem('minhasPlantas', JSON.stringify(array));
+}
