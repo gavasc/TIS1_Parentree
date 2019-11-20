@@ -214,7 +214,7 @@ input#menu-hamburguer:checked ~ .opcoesMenu a
 #botaoAdicionar
 {
     position: absolute;
-    right: 8%;
+    right: 6%;
     bottom: 30%;
 }
 #btnAdcMinhasPlantas {
