@@ -46,22 +46,6 @@ main {
     color: rgb(255, 255, 255);
 }
 
-#barraNavegacao {
-    background-color: #9bdf98;
-    width: 100%;
-    text-align: center;
-}
-#barraBuscaCatalogo {
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-.menu-h{
-    margin-top: 50px;
-    transform: rotate(2deg);
-}
-
 /* Conteúdo */
 
 .barraLateral {
@@ -169,8 +153,21 @@ main {
 #catalogoPlantas > .plantaSubInfo > .resumoDescricao {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* ESCRITO MENU AO LADO DO MENU HAMBURGUER */
+.menu-direita
+{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    float: right;
+    padding-top: 50px;
+    right: 90px;
+    color: white;
+}
 /* Menu hamburguer */
+.menu-h{
+    margin-top: 50px;
+    transform: rotate(2deg);
+}
 .menu-h
 {
     background:  rgb(255, 255, 255);
@@ -181,7 +178,7 @@ main {
     right: 10px;
     top: 5px;
     cursor: pointer;
-    box-shadow: 0 0 0 0 #fff, 0 0 0 30 #fff;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 30 rgb(5, 5, 5);
     transition: box-shadow 0.2s ease-in-out;
 }
 .menu-h:hover
@@ -191,9 +188,9 @@ main {
 .hamburguer {
     position: relative;
     display: block;
-    background: #000;
+    background: rgb(23, 105, 12);
     width: 30px;
-    height: 2px;
+    height: 4px;
     top: 29px;
     left: 15px;
     transition: .5s ease-in-out;
@@ -201,7 +198,7 @@ main {
 
 .hamburguer:before,
 .hamburguer:after {
-    background: #000;
+    background: rgb(23, 105, 12);
     content: '';
     display: block;
     width: 100%;
