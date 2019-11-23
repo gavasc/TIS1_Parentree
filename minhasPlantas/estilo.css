@@ -15,7 +15,8 @@ main {
 
 /* Cabeçalho */
 
-#cabecalhoPagina {
+#cabecalhoPagina
+{
     margin-top: -20px;
     height: 130px;
     background-color: rgb(105, 185, 125);
@@ -26,8 +27,8 @@ main {
     -webkit-transform: rotate(-1.6deg);
     transform: rotate(-1.6deg);
 }
-
-#cabecalhoPagina > .logoParentree {
+.logoParentree
+{
     transform: rotate(1.6deg);
     float: left;
     padding-top: 40px;
@@ -139,7 +140,6 @@ input#menu-hamburguer:checked ~ label .hamburguer:after {
 {
     transform: rotate(2deg);
     display: block;
-    margin-bottom: 40px;
     color: #bedf98;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0px;
@@ -159,6 +159,7 @@ input#menu-hamburguer:checked ~ label .hamburguer:after {
 input#menu-hamburguer:checked ~ .opcoesMenu a
 {
     font-size: 35px;
+    margin-bottom: 40px;
 }
 /* Estilo das plantas na página */
 .imagemPlanta
