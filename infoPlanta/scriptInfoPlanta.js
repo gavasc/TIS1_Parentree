@@ -14,6 +14,12 @@ db.plantas.forEach(item => {
     }
 });
 
+$('#menu-hamburguer').change(function(){
+	if( $(this).is(':checked') ) {
+		$('#informacoesPlanta').hide();
+	}
+	else $('#informacoesPlanta').show();
+});
 
 function adicionarMinhasPlantas(){
 	var listaPlantas = [];
