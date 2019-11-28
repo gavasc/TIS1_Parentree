@@ -9,7 +9,6 @@ db.plantas.forEach(item => {
 			<a id="nome_cientifico"> "${item.nomeCientifico}"</a>
 			<img id="imgPrincipalPlanta" src="${item.linkImagem}">
 			<div id="descricao"><a>"${item.descricao}"</a></div>
-			<a id="tags">Filtrado por:<p>"${item.tags}"</p></a>
         `;
     }
 });

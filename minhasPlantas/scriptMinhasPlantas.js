@@ -23,7 +23,7 @@ function mostrar(item){
             <img class="imagemPlanta" src="${item.linkImagem}">
             <p class="resumoPlanta"> ${item.resumo} </p> 
             <div id="botaoRetirar">
-            <button id="btnRetirarMinhasPlantas" onclick="retirarMinhasPlantas('${item.nomePlanta}')"> Retirar essa planta </button>
+            <button id="btnRetirarMinhasPlantas" onclick="retirarMinhasPlantas('${item.nomePlanta}')"> Retirar planta</button>
         </div>
         </div>
     `
