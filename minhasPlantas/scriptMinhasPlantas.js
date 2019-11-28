@@ -19,30 +19,25 @@ function pegaInfos(nome){
 function mostrar(item){
     document.getElementById('listaMinhasPlantas').innerHTML += `
         <div id="minhaPlanta">
-            <h2 class="nomePlanta"> ${item.nomePlanta} </h2>
+            <h2 class="nomePlanta">${item.nomePlanta}</h2>
             <img class="imagemPlanta" src="${item.linkImagem}">
             <p class="resumoPlanta"> ${item.resumo} </p> 
             <div id="botaoRetirar">
-            <button id="btnRetirarMinhasPlantas" onclick="retirarMinhasPlantas()"> Retirar essa planta </button>
+            <button id="btnRetirarMinhasPlantas" onclick="retirarMinhasPlantas('${item.nomePlanta}')"> Retirar essa planta </button>
         </div>
         </div>
     `
 }
 
-function retirarMinhasPlantas(){
+function retirarMinhasPlantas(nome){
     var array = JSON.parse(localStorage.getItem('minhasPlantas'));
-
-    var nome = document.querySelector('.nomePlanta').textContent;
-    console.log(nome);
-    console.log(array);
-
     for(let i = 0; i < array.length; i++){
         if(array[i] == nome){
             array.splice(i, 1);
             break;
         }
     }
-
+    location.reload();
     localStorage.removeItem('minhasPlantas');
     localStorage.setItem('minhasPlantas', JSON.stringify(array));
 }
