@@ -10,106 +10,88 @@
 </head>
 
 <body>
-    <div class="container">
-			
-        <div class="st-container">
+    <div id="logo">
+        <img src="imagens/parentreelogoverde.png" width="85">
+        <h1>PARENTREE</h1>
+        <p>Seu site de monitoramento de plantas</p>
+    </div>
+    <div id=login-form>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Registre-se</h1>
+                    <input type="text" placeholder="Nome Completo"/>
+              <input type="text" placeholder="Usuário"/>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Senha" />
+                    <button>Registrar-se</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Entre</h1>
+                    <input type="email" placeholder="Usuário" />
+                    <input type="password" placeholder="Senha" />
+                    <a href="#">Esqueceu sua senha?</a>
+                    <button>Entrar</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Bem vindo!</h1>
+                        <button class="ghost" id="signIn">Entrar</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Informe seus dados para <br> continuar</h1>
+                        <button class="ghost" id="signUp">Registrar-se</button>
+                    </div>
+                </div>
+            </div>
+        </div>  <!-- container -->
         
-            <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
-            <a href="#st-panel-1">PARENTREE</a>
-            <input type="radio" name="radio-set" id="st-control-2"/>
-            <a href="#st-panel-2">Entre</a>
-            <input type="radio" name="radio-set" id="st-control-3"/>
-            <a href="#st-panel-3">Como funciona</a>
-            <input type="radio" name="radio-set" id="st-control-4"/>
-            <a href="#st-panel-4">Benefícios</a>
-            <input type="radio" name="radio-set" id="st-control-5"/>
-            <a href="#st-panel-5">Os Criadores</a>
-            
-            <div class="st-scroll">
+        <script>
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container');
         
-                <section class="st-panel" id="st-panel-1">
-                    <BR><BR>
-                    <a href="/catalogo/catalogo.html"><CENTER>CLIQUE AQUI PARA IR PRO SITE (PROVISORIO)</CENTER></a> 
-                    <h2>PARENTREE</h2>
-                    <p>Seu site de monitoramento de plantas</p>
-                </section>
-                
-                <section class="st-panel" id="st-panel-2">
-                    <div id=login-form>
-                        <div class="container" id="container">
-                            <div class="form-container sign-up-container">
-                                <form action="#">
-                                    <h1>Registre-se</h1>
-                                    <input type="text" placeholder="Nome Completo"/>
-                              <input type="text" placeholder="Usuário"/>
-                                    <input type="email" placeholder="Email" />
-                                    <input type="password" placeholder="Senha" />
-                                    <button>Registrar-se</button>
-                                </form>
-                            </div>
-                            <div class="form-container sign-in-container">
-                                <form action="#">
-                                    <h1>Entre</h1>
-                                    <input type="email" placeholder="Usuário" />
-                                    <input type="password" placeholder="Senha" />
-                                    <a href="#">Esqueceu sua senha?</a>
-                                    <button>Entrar</button>
-                                </form>
-                            </div>
-                            <div class="overlay-container">
-                                <div class="overlay">
-                                    <div class="overlay-panel overlay-left">
-                                        <h1>Bem vindo!</h1>
-                                        <button class="ghost" id="signIn">Entrar</button>
-                                    </div>
-                                    <div class="overlay-panel overlay-right">
-                                        <h1>Informe seus dados <br> para continuar</h1>
-                                        <button class="ghost" id="signUp">Registrar-se</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <script>
-                            const signUpButton = document.getElementById('signUp');
-                            const signInButton = document.getElementById('signIn');
-                            const container = document.getElementById('container');
-                        
-                            signUpButton.addEventListener('click', () => {
-                            container.classList.add("right-panel-active");});
-                        
-                            signInButton.addEventListener('click', () => {
-                            container.classList.remove("right-panel-active");});
-                        </script>
-                    </div>              
-                </section>
-                
-                <section class="st-panel" id="st-panel-3">
-                    <h2>Como Funciona</h2>
-                    <p>Disponibilizamos um catálogo com várias plantas, lá você escolhe as que já tem ou 
-                       escolhe a melhor para você com os filtros e adiciona á página Minhas Plantas. 
-                       Depois, lembraremos você quando cuidar dela!</p>
-                </section>
-                
-                <section class="st-panel" id="st-panel-4">
-                    <h2>Benefícios</h2>
-                    <p>Criar plantas em casa oferecem diversos benefícios, como: </p>
-                </section>
-                
-                <section class="st-panel" id="st-panel-5">
-                    <h2>Os Criadores</h2>
-                    <p> <strong>Tudo começou com um trabalho universitário...</strong><br>
-                       Esse site é um projeto da matéria Trabalho Interdisciplinar
-                       de Software I do Curso de Engenharia de Software da PUC Minas
-                    </p>
-                    <img src="imagens/engenheiros.png" id="grupo">
-                </section>
+            signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");});
+        
+            signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");});
+        </script>
+    </div>  <!-- login-form -->
 
-            </div><!-- // st-scroll -->
-            
-        </div><!-- // st-container -->
-        
-</div>
+    <div class="info">
+        <div id="como-funciona">
+            <h1>Como Funciona</h1>
+            <p>O Parentree é o melhor de site de monitoramento de plantas ornamentais, cactos e suculentas 
+               e flores. Após se cadastrar, você acessa o nosso catálogo com diversas espécies onde você 
+               seleciona as plantas que já tem ou, caso ainda não tenha começado a sua jornada, temos um 
+               filtro para te ajudar a escolher a melhor planta para você. Ainda é possível obter dicas do 
+               cultivo na página da planta e no Relato de Cultivo, onde outros usuários contam sobre suas 
+               experiências. <br>
+               Quando já tiver escolhido as suas plantas favoritas, adicione-as a sua página pessoal e nós 
+               iremos te lembrar de cuidar delas sempre que necessário. Consulte o calendário disponível em
+               Minhas Plantas para saber direitinho o que deve ser feito e em quais dias.
+            </p>
+        </div>
+        <div id="beneficios">
+            <h1>Benefícios</h1>
+            <p> Você sabia que existe uma crença japonesa que diz que os arranjos florais têm o poder 
+                da transformação, harmonizando a energia dos espaços? 
+                Cultivar plantas em casa tem váááários benefícios. Muitas plantas como o Lírio-da-Paz, a 
+                Espada de São Jorge, o Antúrio e a Palmeira-Bambu são capazes de absorver toxinas do ar,
+                como as dos produtos de limpeza, tornando a sua casa muito mais saudável. <br>
+                Cuidar de plantas pode ser considerado terapeutico. Segundo<a href="https://www.gazetadopovo.com.br/haus/paisagismo-jardinagem/terapia-verde/">⁽¹⁾</a> 
+                Dea Amorim, terapeuta de família, essa atividade pode ajudar no tratamento da depressão 
+                e da ansiedade (isso não significa cura, é somente um auxílio no tratamento) além de 
+                aproximar a família, já que é uma tividade que pode ser feita com as crianças — tome 
+                cuidado com certas espécies, pois elas podem ser tóxicas.
+                </p>
+        </div>
+    </div>
 </body>
 
 </html>
