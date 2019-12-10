@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Kalam|Montserrat&display=swap');
+
 html {
     height: 100%;
 }
@@ -40,9 +42,9 @@ main {
     transform: rotate(2deg);
     display: inline-block;
     margin: 0;
-    padding-top: 46px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
+    padding-top: 36px;
+    font-family: 'Caveat Brush', sans-serif;
+    font-size: 50px;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
@@ -53,23 +55,23 @@ main {
     text-align: center;
 }
 /* ESCRITO MENU AO LADO DO MENU HAMBURGUER */
-.menu-direita
-{
-    font-family: Arial, Helvetica, sans-serif;
+.menu-direita {
+    transform: rotate(2deg);
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     float: right;
-    padding-top: 50px;
+    padding-top: 46px;
     right: 90px;
     color: white;
 }
+
 /* Menu hamburguer */
-.menu-h{
+.menu-h {
     margin-top: 50px;
     transform: rotate(2deg);
 }
 
-.menu-h
-{
+.menu-h {
     background:  rgb(255, 255, 255);
     border-radius: 50%;
     width: 60px;
@@ -81,10 +83,11 @@ main {
     box-shadow: 0 0 0 0 #fff, 0 0 0 30 #fff;
     transition: box-shadow 0.2s ease-in-out;
 }
-.menu-h:hover
-{
+
+.menu-h:hover {
     box-shadow: 0 0 0 3px #fff, 0 0 0 3px #fff;
 }
+
 .hamburguer {
     position: relative;
     display: block;
@@ -118,10 +121,10 @@ main {
 input#menu-hamburguer {
     display: none;
 }
-input#menu-hamburguer:checked ~ label .menu-h
-{
+input#menu-hamburguer:checked ~ label .menu-h {
     box-shadow: 0 0 0 130vw #fff, 0 0 0 130vw #fff;
 }
+
 input#menu-hamburguer:checked ~ label .hamburguer {
     transform: rotate(45deg);
 }
@@ -136,18 +139,16 @@ input#menu-hamburguer:checked ~ label .hamburguer:after {
     bottom: 0;
 }
 
-.opcoesMenu a
-{
+.opcoesMenu a {
     transform: rotate(2deg);
     display: block;
     color: #bedf98;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0px;
     text-decoration: none;
 }
 /* Posicionamento do menu */
-.opcoesMenu ul
-{
+.opcoesMenu ul {
     margin-top: -10px;
     position: absolute;
     left: 38%;
@@ -155,28 +156,33 @@ input#menu-hamburguer:checked ~ label .hamburguer:after {
     font-size: 35px;
     opacity: 1;
 }
+
 /* Aparecer o menu quando clicar no ícone */
-input#menu-hamburguer:checked ~ .opcoesMenu a
-{
+input#menu-hamburguer:checked ~ .opcoesMenu a {
     font-size: 35px;
     margin-bottom: 40px;
 }
+
 /* Estilo das plantas na página */
-.imagemPlanta
-{
+.imagemPlanta {
 
     width: 165px;
     height: 165px;
 }
-.nomePlanta
-{
+
+.nomePlanta {
     font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Kalam', serif;
     font-weight: bold;
     color: rgb(44, 121, 102);
 }
-#minhaPlanta
-{
+
+.resumoPlanta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+#minhaPlanta {
     display: inline-block;
     background-color: #ffffff;
     width: 250px;
@@ -187,7 +193,7 @@ input#menu-hamburguer:checked ~ .opcoesMenu a
 /* BUTTON */
 
 #btnRetirarMinhasPlantas {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	color: #000000;
 	padding: 8px 20px;
@@ -197,4 +203,18 @@ input#menu-hamburguer:checked ~ .opcoesMenu a
     background-color: #dadada;
     text-align: center;
     cursor: pointer;
+}
+
+#tituloCalendario {
+    font-family: 'Caveat Brush', sans-serif;
+    font-size: 50px;
+    color: #9bdf98;
+    margin-left: 40%;
+    margin-top: -6%;
+}
+
+#calendar {
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
 }
