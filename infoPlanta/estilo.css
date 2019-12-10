@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Kalam|Montserrat&display=swap');
+
 html {
     height: 100%;
 }
@@ -13,15 +15,8 @@ main {
     height: 100%;
 }
 
-/* Conteúdo */
-
-
-
-
 /* Cabeçalho */
-
-#cabecalhoPagina
-{
+#cabecalhoPagina {
     margin-top: -20px;
     height: 130px;
     background-color: rgb(105, 185, 125);
@@ -32,11 +27,12 @@ main {
     -webkit-transform: rotate(-1.6deg);
     transform: rotate(-1.6deg);
 }
-.logoParentree
-{
+
+.logoParentree {
     transform: rotate(1.6deg);
+    width: 80px;
     float: left;
-    padding-top: 40px;
+    padding-top: 45px;
     padding-left: 30px;
     margin-right: 20px;
 }
@@ -45,29 +41,31 @@ main {
     transform: rotate(2deg);
     display: inline-block;
     margin: 0;
-    padding-top: 46px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
+    padding-top: 36px;
+    font-family: 'Caveat Brush', sans-serif;
+    font-size: 50px;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
+
 /* ESCRITO MENU AO LADO DO MENU HAMBURGUER */
-.menu-direita
-{
-    font-family: Arial, Helvetica, sans-serif;
+.menu-direita {
+    transform: rotate(2deg);
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     float: right;
-    padding-top: 50px;
+    padding-top: 46px;
     right: 90px;
     color: white;
 }
+
 /* Menu hamburguer */
 .menu-h{
     margin-top: 50px;
     transform: rotate(2deg);
 }
-.menu-h
-{
+
+.menu-h {
     background:  rgb(255, 255, 255);
     border-radius: 50%;
     width: 60px;
@@ -79,10 +77,11 @@ main {
     box-shadow: 0 0 0 0 #fff, 0 0 0 30 #fff;
     transition: box-shadow 0.2s ease-in-out;
 }
-.menu-h:hover
-{
+
+.menu-h:hover {
     box-shadow: 0 0 0 3px #fff, 0 0 0 3px #fff;
 }
+
 .hamburguer {
     position: relative;
     display: block;
@@ -112,14 +111,16 @@ main {
 .hamburguer:after {
     bottom: -10px;
 }
+
 /* Efeitos do input do menu */
 input#menu-hamburguer {
     display: none;
 }
-input#menu-hamburguer:checked ~ label .menu-h
-{
+
+input#menu-hamburguer:checked ~ label .menu-h {
     box-shadow: 0 0 0 130vw #fff, 0 0 0 130vw #fff;
 }
+
 input#menu-hamburguer:checked ~ label .hamburguer {
     transform: rotate(45deg);
 }
@@ -134,18 +135,17 @@ input#menu-hamburguer:checked ~ label .hamburguer:after {
     bottom: 0;
 }
 
-.opcoesMenu a
-{
+.opcoesMenu a {
     transform: rotate(2deg);
     display: block;
     color: #bedf98;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0px;
     text-decoration: none;
 }
+
 /* Posicionamento do menu */
-.opcoesMenu ul
-{
+.opcoesMenu ul {
     margin-top: -10px;
     position: absolute;
     left: 38%;
@@ -153,70 +153,48 @@ input#menu-hamburguer:checked ~ label .hamburguer:after {
     font-size: 35px;
     opacity: 1;
 }
+
 /* Aparecer o menu quando clicar no ícone */
-input#menu-hamburguer:checked ~ .opcoesMenu a
-{
+input#menu-hamburguer:checked ~ .opcoesMenu a {
     font-size: 35px;
     margin-bottom: 40px;
 }
 
-
-/* parte da página com a imagem e descrição da planta */
+/* parte da página com a imagem e descrição da planta*/
 #imgPrincipalPlanta {
-    position: absolute;
     width: 300px;
-    height: 300px;
-    top: 20%;
-    right: 4%;
-    border: 4px solid #73AD21;
-    padding: 5px;
+    float: left;
+    margin: 5% 3%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
 }
-#nome_planta
-{
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    color: #b4e466;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+
+#nome_planta {
+    font-family: 'Kalam', sans-serif;
+    font-size: 55px;
+    color: #95ca64;
 }
-#nome_cientifico{
-    position: absolute;
-    left: 10%;
-    top: 35%;
-    font-size: 19px;
+
+#nome_cientifico {
+    font-family: 'Kalam', sans-serif;
     font-style: italic;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;  
+    margin-top: -4%;
+    font-size: 18px;
 }
-#descricao{
-    width: 50%;
-    height: 50%;
+
+#descricao {
+    margin-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-left: 30%;
+}
+
+#botaoAdicionar {
     position: absolute;
-    bottom: 0px;
-    left: 50px;
-    
-}
-#descricao > a{
-    font-size:30px;
-    font-family: Arial, Times, serif;
-}
-#tags
-{
-    position: absolute;
-    right: 10%;
-    bottom: 15%;
-    font-size: 80%;
-    font-family: Arial, Times, serif;
-}
-#botaoAdicionar
-{
-    position: fixed;
     bottom: 5px;
-    right: 10px;
+    right: 75%;
     padding: 10px;
 }
+
 #btnAdcMinhasPlantas {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
