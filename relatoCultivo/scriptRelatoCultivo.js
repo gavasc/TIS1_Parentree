@@ -1,3 +1,15 @@
+var dbRel = {
+    'relatos':[]
+}
+
+if(localStorage.getItem('dbRel') != null) {
+    dbRel = JSON.parse(localStorage.getItem('dbRel'));
+    for(let i = 0; i < dbRel.relatos.length; i++){
+        let e = dbRel.relatos[i];
+        forum.relatos.push(e);
+    }
+}
+
 for(var i = 0; i < forum.relatos.length; i++){
     document.getElementById('relato').innerHTML += 
         `<div class="infoRelato">
