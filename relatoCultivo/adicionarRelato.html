@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estiloRelatoCultivo.css">
-    <title>Parentree - Relato de Cultivo</title>
+    <title>Parentree - Adicionar Relato</title>
     <link rel="shortcut icon" href="../imagens/icone.png" />
     <script src="dbRelatos.js"></script>
 </head>
@@ -41,8 +41,24 @@
     </header>
 
     <main>
-        <div id="relato"></div>
+        <div>
+            <form id="formRelato">
+                <div id="sessaoUser">
+                    <label id="labelUser">User</label>
+                    <input type="text" id="inputUser" placeholder="Digite o seu user">
+                </div>
+
+                <div id="sessaoPlanta">
+                    <label id="labelPlanta">Planta</label>
+                    <input type="text" id="inputPlanta" placeholder="Digite o nome da planta">
+                </div>
+
+                <div id="sessaoRelato">
+                    <label id="labelRelato">Relato</label>
+                    <input type="text" id="inputRelato" placeholder="Deixe seu relato aqui">
+                </div>
+            </form>
+        </div>
     </main>
-    <script src="scriptRelatoCultivo.js"></script>
 </body>
 </html>
