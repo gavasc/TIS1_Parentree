@@ -162,3 +162,82 @@ input#menu-hamburguer:checked ~ .opcoesMenu a {
     font-size: 35px;
     margin-bottom: 40px;
 }
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #457544;
+}
+
+#tituloRelatos {
+    margin: 5% 0% 2% 7%;
+    font-family: 'Kalam', serif;
+    font-size: 40px;
+    color: forestgreen;
+}
+
+.infoRelato {
+    float: left;
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 8%;
+    margin-bottom: 6%;
+}
+
+#user_data {
+    margin: -0.5% 0%;
+    font-size: 14px;
+}
+
+#btnAddRel {
+    float: left;
+    margin-right: 4%;
+    margin-top: -10%;
+}
+
+#addRelato {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	padding: 8px 20px;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #dadada;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Adicionar Relato */
+form {
+    margin: 15% 75%;
+    width: 120%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#inputUser, #inputPlanta, #inputRelato {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+
+#sessaoPlanta, #sessaoRelato {
+    margin-top: 20px;
+}
+
+#btnAdicionarRel {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #000000;
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background-color: #dadada;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    float: right;
+}
